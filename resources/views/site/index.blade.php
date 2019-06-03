@@ -258,96 +258,37 @@
           Просто позвоните или напишите нам и мы приступим к обсуждению сделки.</p>
 
         <div class="row">
+          @foreach($products as $k=>$product)
           <div class="col-md-4">
             <!-- Card -->
             <div class="card">
 
               <!-- Card image -->
               <div class="view overlay">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/food.jpg" alt="Card image cap">
+                <img class="card-img-top" src="{{ asset('/storage/' .$product->image)}}" alt="{{$product->name}}">
                 <a>
                   <div class="mask rgba-white-slight"></div>
                 </a>
               </div>
 
               <!-- Button -->
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i
+              <a class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3" href="{{ route('tovary', $product->slug) }}"><i
                   class="fas fa-chevron-right pl-1"></i></a>
 
               <!-- Card content -->
               <div class="card-body">
 
                 <!-- Title -->
-                <h4 class="card-title">Card title</h4>
+                <h4 class="card-title">{{$product->name}}</h4>
                 <hr>
                 <!-- Text -->
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
+                <p class="card-text">{!!str_limit($product->description, $limit = 100, $end = '...') !!}</p>
 
               </div>
             </div>
             <!-- Card -->
           </div>
-          <div class="col-md-4">
-            <!-- Card -->
-            <div class="card">
-
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/food.jpg" alt="Card image cap">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-
-              <!-- Button -->
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i
-                  class="fas fa-chevron-right pl-1"></i></a>
-
-              <!-- Card content -->
-              <div class="card-body">
-
-                <!-- Title -->
-                <h4 class="card-title">Card title</h4>
-                <hr>
-                <!-- Text -->
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-            <!-- Card -->
-          </div>
-          <div class="col-md-4">
-            <!-- Card -->
-            <div class="card">
-
-              <!-- Card image -->
-              <div class="view overlay">
-                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/food.jpg" alt="Card image cap">
-                <a>
-                  <div class="mask rgba-white-slight"></div>
-                </a>
-              </div>
-
-              <!-- Button -->
-              <a class="btn-floating btn-action ml-auto mr-4 mdb-color lighten-3"><i
-                  class="fas fa-chevron-right pl-1"></i></a>
-
-              <!-- Card content -->
-              <div class="card-body">
-
-                <!-- Title -->
-                <h4 class="card-title">Card title</h4>
-                <hr>
-                <!-- Text -->
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-
-              </div>
-            </div>
-            <!-- Card -->
-          </div>
+          @endforeach
         </div>
       </section>
       <!-- section product catalog -->

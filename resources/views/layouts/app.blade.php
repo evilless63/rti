@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ config('app.name', 'Laravel') }}</title>
+  <title>РТИ Трейдинг - @yield('title')</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -65,22 +65,22 @@
         <!-- Links -->
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index">Главная</a>
+            <a class="nav-link" href="/">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="tovary">Продукция</a>
+            <a class="nav-link" href="/tovary">Продукция</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="kontakty">Контакты</a>
+            <a class="nav-link" href="/kontakty">Контакты</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="o-kompanii">О компании</a>
+            <a class="nav-link" href="/o-kompanii">О компании</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="staty">Статьи</a>
+            <a class="nav-link" href="/staty">Статьи</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="dostavka">Доставка</a>
+            <a class="nav-link" href="/dostavka">Доставка</a>
           </li>
 
         </ul>

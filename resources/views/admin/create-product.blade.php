@@ -26,15 +26,15 @@
             </div>
             <div class="form-group">
                 <label for="description">Описание:</label>
-                <textarea class="form-control" name="description" id="" cols="30" rows="10"></textarea>
+                <textarea class="form-control" name="description" id="ck_description" cols="30" rows="10"></textarea>
             </div>
             <div class="form-group">
                 <label for="variations_description">Описание допусков:</label>
-                <textarea class="form-control" name="variations_description" id="" cols="30" rows="10"></textarea>
+                <textarea class="form-control" name="variations_description" id="ck_variations_description" cols="30" rows="10"></textarea>
             </div>
             <div class="form-group">
                 <label for="variations_table">Таблица допусков:</label>
-                <textarea class="form-control" name="variations_table" id="" cols="30" rows="10"></textarea>
+                <textarea class="form-control" name="variations_table" id="ck_variations_table" cols="30" rows="10"></textarea>
             </div>
             <div class="form-group">
                 <label for="variations">Варианты допусков (через запятую):</label>

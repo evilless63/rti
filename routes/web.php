@@ -19,42 +19,30 @@ Route::get('/admin', 'AdminController@index')->name('admin_home');
 
 Route::group(['middleware' => 'auth'], function(){
 
-    Route::post('product', 'ProductController@store')->name('product.store');
-    Route::get('product/create', 'ProductController@create')->name('product.create');
-    Route::patch('product/{slug}', 'ProductController@update')->name('product.update');
-    Route::delete('product/{slug}', 'ProductController@destroy')->name('product.destroy');
-    Route::get('product/{slug}/edit', 'ProductController@edit')->name('product.edit');
-    Route::get('product', 'ProductController@index')->name('product.index');
+    Route::post('admin/product', 'ProductController@store')->name('product.store');
+    Route::get('admin/product/create', 'ProductController@create')->name('product.create');
+    Route::patch('admin/product/{slug}', 'ProductController@update')->name('product.update');
+    Route::delete('admin/product/{slug}', 'ProductController@destroy')->name('product.destroy');
+    Route::get('admin/product/{slug}/edit', 'ProductController@edit')->name('product.edit');
+    Route::get('admin/products', 'ProductController@index')->name('product.index');
+    Route::get('admin/product/{slug}', 'ProductController@show')->name('product.show');
 
-    Route::resource('article', 'ArticleController');
-    Route::resource('variation', 'VariationController');
+    Route::resource('admin/article', 'ArticleController');
 });
 
-Route::get('/kontakty', function () {
-    return view('site.kontakty');
-})->name('kontakty');
+Route::get('/kontakty', 'SiteController@kontakty')->name('kontakty');
 
-Route::get('/o-kompanii', function () {
-    return view('site.o-kompanii');
-})->name('o-kompanii');
+Route::get('/o-kompanii', 'SiteController@okompanii')->name('o-kompanii');
 
-Route::get('/', function () {
-    return view('site.index');
-})->name('index');
+Route::get('/', 'SiteController@index')->name('index');
 
-Route::get('/staty', function () {
-    return view('site.staty');
-})->name('staty');
+Route::get('/staty', 'SiteController@staty')->name('staty');
 
-Route::get('/politics', function () {
-    return view('site.politics');
-})->name('politics');
+Route::get('/politics', 'SiteController@politics')->name('politics');
 
-Route::get('/tovary', function () {
-    return view('site.tovary');
-})->name('tovary');
+Route::get('/tovary/{slug}', 'SiteController@tovary')->name('tovary');
+Route::get('/tovary', 'SiteController@firsttovar')->name('firsttovar');
 
 
-Route::get('product/{slug}', 'ProductController@show')->name('product.show');
 
 

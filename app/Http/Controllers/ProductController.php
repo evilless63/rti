@@ -44,12 +44,14 @@ class ProductController extends Controller
         //     'name' => 'required',
         //     'slug' => 'required'
         // ]);
-
+        $data = $request->all();
         if($request->hasFile('image')) {
             $path = $request->file('image')->store('uploads', 'public');
         }
 
-        $product = Product::create($request->all());
+        $data['image'] = $path;
+
+        $product = Product::create($data);
         if($request->filled('variations')) {
             $variations = explode(",", $request->variations);
 
@@ -63,6 +65,7 @@ class ProductController extends Controller
         //Указываем допуски
 
         $products = Product::all();
+        $request->session()->flash('alert-success', 'Информация успешно добавлена !');
         return View('admin.products', compact('products'));
     }
 
@@ -110,8 +113,17 @@ class ProductController extends Controller
      */
     public function update(Request $request, $slug)
     {
+
         $product = Product::whereSlug($slug)->FirstOrFail();
-        $product->update($request->all());
+
+        $data = $request->all();
+
+        if($request->hasFile('image')) {
+            $path = $request->file('image')->store('uploads', 'public');
+        }
+
+        $data['image'] = $path;
+        $product->update($data);
 
         $variations = $product->variations->all();
         foreach($variations as $variation) {
@@ -131,6 +143,7 @@ class ProductController extends Controller
         }
 
         $products = Product::all();
+        $request->session()->flash('alert-success', 'Информация успешно обновлена !');
         return View('admin.products', compact('products'));
     }
 
@@ -140,8 +153,18 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($slug)
     {
-        //
+        $product = Product::whereSlug($slug)->FirstOrFail();
+        $variations = $product->variations->all();
+        foreach($variations as $variation) {
+            $delVar = Variation::find($variation->id);
+            $delVar->delete();
+        }
+
+        $product->delete();
+        $products = Product::all();
+        $request->session()->flash('alert-success', 'Информация успешно удалена !');
+        return View('admin.products', compact('products'));
     }
 }

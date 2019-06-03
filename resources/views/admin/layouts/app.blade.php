@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Департамент Аукционных Продаж - @yield('title')</title>
+    <title>РТИ Трейдинг - админ панель - @yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -64,7 +64,7 @@
 
     <nav class="navbar navbar-toggleable-sm navbar-light bg-default">
         <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
+        <a class="navbar-brand" href="{{ url('/admin') }}">
             На главную
         </a>
         <a href="{{ route('product.index') }}">Продукция</a>
@@ -99,6 +99,14 @@
     <main class="py-4">
         @yield('content')
     </main>
+
+
+    <script src="{{ asset('vendor/unisharp/laravel-ckeditor/ckeditor.js') }}"></script>
+    <script>
+        CKEDITOR.replace( 'ck_description' );
+        CKEDITOR.replace( 'ck_variations_description' );
+        CKEDITOR.replace( 'ck_variations_table' );
+    </script>
 
 </body>
 </html>

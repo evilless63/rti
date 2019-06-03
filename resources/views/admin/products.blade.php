@@ -31,8 +31,10 @@
                 <a href="{{ route('product.edit', $product->slug) }}" class="btn btn-primary">Редактировать</a>
                 </td>
                 <td>
-                    <form action="">
-                        <button class="btn btn-danger">
+                    <form method="post" action="{{ route('product.destroy', $product->slug) }}">
+                        @csrf
+                        @method('DELETE')
+                        <button class="btn btn-danger" onClick="return confirm('Вы подтверждаете удаление?');">
                             Удалить товар
                         </button>
                     </form>
