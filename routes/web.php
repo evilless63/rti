@@ -27,7 +27,15 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('admin/products', 'ProductController@index')->name('product.index');
     Route::get('admin/product/{slug}', 'ProductController@show')->name('product.show');
 
-    Route::resource('admin/article', 'ArticleController');
+    Route::post('admin/article', 'ArticleController@store')->name('article.store');
+    Route::get('admin/article/create', 'ArticleController@create')->name('article.create');
+    Route::patch('admin/article/{slug}', 'ArticleController@update')->name('article.update');
+    Route::delete('admin/article/{slug}', 'ArticleController@destroy')->name('article.destroy');
+    Route::get('admin/article/{slug}/edit', 'ArticleController@edit')->name('article.edit');
+    Route::get('admin/articles', 'ArticleController@index')->name('article.index');
+    Route::get('admin/particleroduct/{slug}', 'ArticleController@show')->name('article.show');
+
+    // Route::resource('admin/article', 'ArticleController');
 });
 
 Route::get('/kontakty', 'SiteController@kontakty')->name('kontakty');
@@ -37,6 +45,7 @@ Route::get('/o-kompanii', 'SiteController@okompanii')->name('o-kompanii');
 Route::get('/', 'SiteController@index')->name('index');
 
 Route::get('/staty', 'SiteController@staty')->name('staty');
+Route::get('/statya/{slug}', 'SiteController@statya')->name('statya');
 
 Route::get('/politics', 'SiteController@politics')->name('politics');
 

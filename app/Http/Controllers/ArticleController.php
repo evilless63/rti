@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Article;
 class ArticleController extends Controller
 {
     /**
@@ -13,7 +13,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        $articles = Article::latest()->paginate(15);
+        return View('admin.articles', compact('articles'));
     }
 
     /**
@@ -23,7 +24,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+        return View('admin.create-article');
     }
 
     /**
@@ -34,7 +35,17 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        if($request->hasFile('image')) {
+            $path = $request->file('image')->store('uploads', 'public');
+        }
+
+        $data['image'] = $path;
+        $article = Article::create($data);
+
+        $articles = Article::latest()->paginate(15);
+        $request->session()->flash('alert-success', 'Информация успешно добавлена !');
+        return View('admin.articles', compact('articles'));
     }
 
     /**
@@ -43,9 +54,21 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+        if (is_numeric($slug)) {
+            // Get post for slug.
+            $article = Product::findOrFail($slug);
+    
+            return Redirect::to(route('article.show', $article->slug), 301);
+        }
+    
+        // Get post for slug.
+        $article = Article::whereSlug($slug)->firstOrFail();
+    
+        return view('article.show', [
+            'article' => $article
+        ]);
     }
 
     /**
@@ -54,9 +77,10 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        //
+        $article = Article::whereSlug($slug)->firstOrFail();
+        return view('admin.edit-article', compact('article'));
     }
 
     /**
@@ -66,9 +90,22 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $slug)
     {
-        //
+        $article = Article::whereSlug($slug)->FirstOrFail();
+
+        $data = $request->all();
+
+        if($request->hasFile('image')) {
+            $path = $request->file('image')->store('uploads', 'public');
+        }
+
+        $data['image'] = $path;
+        $article->update($data);
+
+        $articles = Article::latest()->paginate(15);
+        $request->session()->flash('alert-success', 'Информация успешно обновлена !');
+        return View('admin.articles', compact('articles'));
     }
 
     /**
@@ -77,8 +114,13 @@ class ArticleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($slug, Request $request)
     {
-        //
+        $article = Article::whereSlug($slug)->FirstOrFail();
+        $article->delete();
+
+        $articles = Article::latest()->paginate(15);
+        $request->session()->flash('alert-success', 'Информация успешно удалена !');
+        return View('admin.articles', compact('articles'));
     }
 }

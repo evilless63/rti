@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\Article;
 
 class SiteController extends Controller
 {
@@ -23,6 +24,12 @@ class SiteController extends Controller
 
     public function staty() {
         return view('site.staty');
+    }
+
+    //TODO Сделать view статьи и заполнить его.
+    public function statya($slug) {
+        $single_article = Article::whereSlug($slug)->firstOrFail();
+        return view('site.article');
     }
 
     public function politics() {

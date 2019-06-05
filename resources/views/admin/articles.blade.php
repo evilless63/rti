@@ -5,10 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
 
-        <h2>Продукция</h2>
+        <h2>Статьи</h2>
 
         <form action="">
-        <a href="{{ route('product.create') }}" class="btn btn-success">Создать новый товар</a>
+        <a href="{{ route('article.create') }}" class="btn btn-success">Создать новую статью</a>
         </form>
 
         <table class="table">
@@ -17,21 +17,23 @@
             <th scope="col">#</th>
             <th scope="col">Наименование</th>
             <th scope="col">Ярлык</th>
+            <th scope="col">Краткий текст</th>
             <th scope="col">Редактировать</th>
             <th scope="col">Удалить</th>
             </tr>
         </thead>
         <tbody>
-            @foreach($products as $k=>$product)
+            @foreach($articles as $k=>$article)
             <tr>
             <th scope="row">{{++$k}}</th>
-                <td>{{$product->name}}</td>
-                <td>{{$product->slug}}</td>
+                <td>{{$article->name}}</td>
+                <td>{{$article->slug}}</td>
+                <td>{{$article->short_description}}</td>
                 <td>
-                <a href="{{ route('product.edit', $product->slug) }}" class="btn btn-primary">Редактировать</a>
+                <a href="{{ route('article.edit', $article->slug) }}" class="btn btn-primary">Редактировать</a>
                 </td>
                 <td>
-                    <form method="post" action="{{ route('product.destroy', $product->slug) }}">
+                    <form method="post" action="{{ route('article.destroy', $article->slug) }}">
                         @csrf
                         @method('DELETE')
                         <button class="btn btn-danger" onClick="return confirm('Вы подтверждаете удаление?');">
@@ -46,7 +48,7 @@
 
         <nav aria-label="Page navigation example">
             <ul class="pagination pg-blue justify-content-center">
-                {{ $products->links() }}
+                {{ $articles->links() }}
             </ul>
         </nav>
         </div>

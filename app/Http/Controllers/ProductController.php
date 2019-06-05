@@ -15,7 +15,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
+        $products = Product::latest()->paginate(15);
         return View('admin.products', compact('products'));
     }
 
@@ -64,7 +64,7 @@ class ProductController extends Controller
         }
         //Указываем допуски
 
-        $products = Product::all();
+        $products = Product::latest()->paginate(15);
         $request->session()->flash('alert-success', 'Информация успешно добавлена !');
         return View('admin.products', compact('products'));
     }
@@ -81,7 +81,7 @@ class ProductController extends Controller
             // Get post for slug.
             $product = Product::findOrFail($slug);
     
-            return Redirect::to(route('product.show', $post->slug), 301);
+            return Redirect::to(route('product.show', $product->slug), 301);
         }
     
         // Get post for slug.
@@ -142,7 +142,7 @@ class ProductController extends Controller
             }
         }
 
-        $products = Product::all();
+        $products = Product::latest()->paginate(15);
         $request->session()->flash('alert-success', 'Информация успешно обновлена !');
         return View('admin.products', compact('products'));
     }
@@ -153,7 +153,7 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($slug)
+    public function destroy($slug,Request $request)
     {
         $product = Product::whereSlug($slug)->FirstOrFail();
         $variations = $product->variations->all();
@@ -163,7 +163,7 @@ class ProductController extends Controller
         }
 
         $product->delete();
-        $products = Product::all();
+        $products = Product::latest()->paginate(15);
         $request->session()->flash('alert-success', 'Информация успешно удалена !');
         return View('admin.products', compact('products'));
     }
