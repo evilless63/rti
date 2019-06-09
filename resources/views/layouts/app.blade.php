@@ -7,6 +7,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="keywords" content="@yield('metakeywords')" />
   <meta name="description" content="@yield('metadescription')"  />
+   <!-- CSRF Token -->
+   <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>РТИ Трейдинг - @yield('title')</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -259,6 +261,53 @@
                     $(this).removeClass('btn-deep-orange');
                     $(this).addClass('blue-gradient');
                 }
+            });
+
+            $('#send_order').on('click', function (e) {
+                e.preventDefault();
+                
+                let dataName = $('#form-name').val(); 
+                let dataEmail = $('#form-email').val(); 
+                let dataPhone = $('#form-phone').val();
+                let dataText = $('#form-text').val();
+                let dataPolitics = $('#materialUnchecked').val();
+
+                let orderString = "";
+                $('.btn-deep-orange').each(function(){
+                  orderString = orderString + " " + $(this).text();    
+                });
+ 
+                $.ajax({
+                    headers: {
+                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    type: 'POST',
+                    url: '/send-order',
+                    data: {
+                      dataName: dataName,
+                      dataEmail : dataEmail,
+                      dataPhone : dataPhone,
+                      dataText : dataText,
+                      dataPolitics : dataPolitics,
+                      
+                    },
+
+                    
+                    success: function (data) {
+                      console.log(data);
+                        // if (data.result) {
+                        //     $('#senderror').hide();
+                        //     $('#sendmessage').show();
+                        // } else {
+                        //     $('#senderror').show();
+                        //     $('#sendmessage').hide();
+                        // }
+                    },
+                    error: function () {
+                        $('#senderror').show();
+                        $('#sendmessage').hide();
+                    }
+                });
             });
         });
     </script>

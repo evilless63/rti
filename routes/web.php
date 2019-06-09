@@ -52,6 +52,8 @@ Route::get('/politics', 'SiteController@politics')->name('politics');
 Route::get('/tovary/{slug}', 'SiteController@tovary')->name('tovary');
 Route::get('/tovary', 'SiteController@firsttovar')->name('firsttovar');
 
+Route::post('send-order', 'MailController@sendOrder');
+
 
 
 
