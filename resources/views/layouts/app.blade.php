@@ -68,7 +68,7 @@
 
         <!-- Links -->
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="/">Главная</a>
           </li>
           <li class="nav-item">
@@ -119,19 +119,7 @@
 
     <!-- Grid column -->
     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-      <h6 class="text-uppercase mb-4 font-weight-bold">Продукция</h6>
-      <p>
-        <a href="#!">Продукция</a>
-      </p>
-      <p>
-        <a href="#!">Продукция</a>
-      </p>
-      <p>
-        <a href="#!">Продукция</a>
-      </p>
-      <p>
-        <a href="#!">Продукция</a>
-      </p>
+     
     </div>
     <!-- Grid column -->
 
@@ -197,35 +185,7 @@
     <div class="col-md-5 col-lg-4 ml-lg-0">
 
       <!-- Social buttons -->
-      <div class="text-center text-md-right">
-        <ul class="list-unstyled list-inline">
-          <li class="list-inline-item">
-            <a class="btn-floating btn-sm rgba-white-slight mx-1">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-floating btn-sm rgba-white-slight mx-1">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-floating btn-sm rgba-white-slight mx-1">
-              <i class="fab fa-google-plus-g"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-floating btn-sm rgba-white-slight mx-1">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="btn-floating btn-sm rgba-white-slight mx-1">
-              <i class="fab fa-vk"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
+      
 
     </div>
     <!-- Grid column -->
