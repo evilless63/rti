@@ -271,7 +271,7 @@
 
         <div class="row">
           @foreach($products as $k=>$product)
-          <div class="col-md-4">
+          <div class="col-md-4 wow fadeIn" data-wow-delay="0.2s">
             <!-- Card -->
             <div class="card">
 
@@ -319,7 +319,7 @@
           Просто позвоните или напишите нам и мы приступим к обсуждению сделки.</p>
         <div class="row">
           <!--Grid column-->
-          <div class="col-lg-5 mb-4">
+          <div class="col-lg-5 mb-4 wow fadeIn" data-wow-delay="0.2s">
 
             <!--Form with header-->
             <div class="card">

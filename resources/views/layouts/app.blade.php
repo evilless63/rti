@@ -248,6 +248,7 @@
 
     <script>
         $(document).ready(function () {
+          new WOW().init();
             $('button[data-type="order_button"]').on('click', function (event) {
                 event.preventDefault();
 

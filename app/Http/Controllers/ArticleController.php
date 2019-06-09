@@ -98,9 +98,9 @@ class ArticleController extends Controller
 
         if($request->hasFile('image')) {
             $path = $request->file('image')->store('uploads', 'public');
+            $data['image'] = $path;
         }
 
-        $data['image'] = $path;
         $article->update($data);
 
         $articles = Article::latest()->paginate(15);

@@ -43,7 +43,7 @@
                     <div class="row text-center mb-2">
                       @foreach($articles as $k=>$article)
                       <!-- Grid column -->
-                      <div class="col-lg-4 col-md-12 mb-5">
+                      <div class="col-lg-4 col-md-12 mb-5 wow fadeIn" data-wow-delay="0.2s">
                         <!-- Featured image -->
                         <div class="view overlay rounded z-depth-1 mb-2">
                           <img src="{{ asset('/storage/' .$article->image)}}" class="img-fluid"
@@ -69,7 +69,7 @@
                         </div>
                         <!-- Grid row -->
                         <p class="dark-">{!!$article->short_description!!}</p>
-                        <a class="{{ route('statya', $article->slug) }}">Подробнее</a>
+                        <a class="btn btn-standart" href="{{ route('statya', $article->slug) }}">Подробнее</a>
                         <hr class="mt-1" style="max-width: 90px">
                       </div>
                       <!-- Grid column -->

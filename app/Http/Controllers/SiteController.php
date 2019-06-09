@@ -30,7 +30,8 @@ class SiteController extends Controller
     //TODO Сделать view статьи и заполнить его.
     public function statya($slug) {
         $single_article = Article::whereSlug($slug)->firstOrFail();
-        return view('site.article', compact('single_article'));
+        $other_articles = Article::all()->take(3);
+        return view('site.article', compact('single_article','other_articles'));
     }
 
     public function politics() {

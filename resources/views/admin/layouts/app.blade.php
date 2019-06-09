@@ -64,7 +64,7 @@
 
 
     <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+<nav class="navbar navbar-expand-lg navbar-dark primary-color container">
 
     <!-- Navbar brand -->
     <a class="navbar-brand" href="{{ url('/admin') }}">На главную</a>

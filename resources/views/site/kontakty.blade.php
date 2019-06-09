@@ -87,22 +87,37 @@
                   <div class="row pt-2 mb-5 text-left">
                     <div class="col-md-5 mp-4">
                       <div class="d-flex flex-column">
-                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> Flex item 1</div>
-                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> Flex item 2</div>
-                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> Flex item 3</div>
+                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> ОГРН № 1123435007365 от 27.12.2012 г.
+                          выдано ИФНС России по г. Волжскому
+                          </div>
+                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> ИНН / КПП: 3435302108 / 343501001</div>
+                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> Юридический адрес: 404130, Россия, Волгоградская обл., 
+                          г. Волжский, ул. Горького, 102 «А»
+                          </div>
+                          <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> Почтовый адрес: 404130, Россия, Волгоградская обл., 
+                            г. Волжский, ул. Горького, 102 «А»
+                            </div>
                       </div>
                     </div>
                     <div class="col-md-4 mp-4">
                       <div class="d-flex flex-column">
-                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> Flex item 1</div>
-                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> Flex item 2</div>
-                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> Flex item 3</div>
+                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> Банковские реквизиты: Р/с 407 028 104 049 000 006 75
+                          в Ф-ле №9 ОАО КБ «Центр-инвест»
+                          г. Волгоград 
+                          К/с 30101810100000000870
+                          БИК 041806870
+                          </div>
+                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> Телефон/Факс: (88443) 31-05-75</div>
+                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> Адрес электронной почты: zh1973@inbox.ru</div>
+                        <div class="p-2"><i class="far fa-file-alt fa-fw fa-lg"></i> ФИО руководителя и должность: Захаров Алексей Викторович — директор
+                          (на основании Устава) 
+                          </div>
                       </div>
                     </div>
                     <div class="col-md-3 mp-2">
                       <div class="d-flex flex-column text-center">
                         <div class="p-2">
-                          <a href="">
+                          <a target="_blank" href="/karta_partnera_RTI_trading.doc">
                             <i class="far fa-file-alt fa-fw fa-6x"></i>
                             <p class="pt-3">Скачать карту партнера</p>
                           </a>

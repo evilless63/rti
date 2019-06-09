@@ -37,7 +37,7 @@
                 <label for="variations_description">Подробное описание (на странице):</label>
                 <textarea class="form-control" name="description" id="ck_variations_description" cols="30" rows="10">{{$article->description}}</textarea>
             </div>
-            <button type="submit" class="btn btn-success">Создать</button>
+            <button type="submit" class="btn btn-success">Обновить</button>
         </form>
 
         </div>

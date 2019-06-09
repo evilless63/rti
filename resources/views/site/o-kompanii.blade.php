@@ -58,10 +58,10 @@
                                             </h3>
 
                                             <!-- Description -->
-                                            <p align="justify" class="">
+                                            <p align="justify" class="wow fadeIn">
                                                 Вот уже "" лет мы занимаемся поставками резинотехнических изделий. За это время мы выработали единые стандарты работы с нашими бизнес-парнерами.
                                             </p>
-                                            <p align="justify" class="">Приглашаем Вас присоединиться к нам.</p>
+                                            <p align="justify" class="wow fadeIn">Приглашаем Вас присоединиться к нам.</p>
 
                                         </div>
                                         <!-- Grid column -->
@@ -90,8 +90,8 @@
                                             </h3>
 
                                             <!-- Description -->
-                                            <p align="justify" class="">Обеспечить наилучшее качество обслуживания наших партнеров при поставке нашей продукции.</p>
-                                            <p align="justify" class="">Обеспечить гибкость при ведении бизнеса и снабжать наших клиентов только качественной продукцией РТИ</p>
+                                            <p align="justify" class="wow fadeIn">Обеспечить наилучшее качество обслуживания наших партнеров при поставке нашей продукции.</p>
+                                            <p align="justify" class="wow fadeIn">Обеспечить гибкость при ведении бизнеса и снабжать наших клиентов только качественной продукцией РТИ</p>
 
                                         </div>
                                         <!-- Grid column -->
@@ -149,13 +149,13 @@
                                         <strong>Встречайте нашу дружную команду</strong>
                                     </h3>
                                     <!-- Section description -->
-                                    <p class=" w-responsive text-center mx-auto mb-5">Все эти люди с радостью готовы помочь Вам в вопросах покупки резинотехнических изделий и обеспечить наивысшее касчество обслуживания.</p>
+                                    <p class=" w-responsive text-center mx-auto mb-5 wow fadeIn">Все эти люди с радостью готовы помочь Вам в вопросах покупки резинотехнических изделий и обеспечить наивысшее касчество обслуживания.</p>
 
                                     <!-- Grid row -->
                                     <div class="row mb-lg-4 text-center text-md-left">
 
                                         <!-- Grid column -->
-                                        <div class="col-lg-6 col-md-12 mb-5">
+                                        <div class="col-lg-6 col-md-12 mb-5 wow fadeIn">
 
                                             <div class="col-md-6 float-left">
                                                 <div class="avatar mx-auto white mb-md-0 mb-4">
@@ -177,7 +177,7 @@
                                         <!-- Grid column -->
 
                                         <!-- Grid column -->
-                                        <div class="col-lg-6 col-md-12 mb-5">
+                                        <div class="col-lg-6 col-md-12 mb-5 wow fadeIn">
 
                                             <div class="col-md-6 float-left">
                                                 <div class="avatar mx-auto white mb-md-0 mb-4">
@@ -202,7 +202,7 @@
                                     <!-- Grid row -->
 
                                     <!-- Grid row -->
-                                    <div class="row text-center text-md-left">
+                                    <div class="row text-center text-md-left wow fadeIn">
 
                                         <!-- Grid column -->
                                         <div class="col-lg-6 col-md-12 mb-5">
@@ -227,7 +227,7 @@
                                         <!-- Grid column -->
 
                                         <!-- Grid column -->
-                                        <div class="col-lg-6 col-md-12 mb-5">
+                                        <div class="col-lg-6 col-md-12 mb-5 wow fadeIn">
                                             <div class="col-md-6 float-left">
                                                 <div class="avatar mx-auto white mb-md-0 mb-4">
                                                     <img src="img/customers/wooman.jpg"
