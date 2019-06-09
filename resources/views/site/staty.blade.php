@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('title', 'Статьи и новости')
+@section('metakeywords', 'Статьи РТИ, Новости РТИ Трейдинг')
+@section('metadescription', 'Новости компании РТИ Трейдинг. Полезные статьи на тему Резино-технических изделий')
 
 @section('content')
 <section>
@@ -65,7 +68,7 @@
                         
                         </div>
                         <!-- Grid row -->
-                        <p class="dark-">{{$article->short_description}}</p>
+                        <p class="dark-">{!!$article->short_description!!}</p>
                         <a class="{{ route('statya', $article->slug) }}">Подробнее</a>
                         <hr class="mt-1" style="max-width: 90px">
                       </div>

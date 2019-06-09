@@ -1,5 +1,17 @@
 @extends('layouts.app')
 
+@section('title')
+    Контакты
+@endsection
+
+@section('metakeywords')
+    Контактная информация РТИ, Как проехать РТИ, Где находится РТИ Трейдинг
+@endsection
+
+@section('metadescription')
+    Контакты компании РТИ Трейдинг, Информация для партнеров, Карта партнера компании.
+@endsection
+
 
 @section('content')
 <section>

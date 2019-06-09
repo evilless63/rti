@@ -23,13 +23,14 @@ class SiteController extends Controller
     }
 
     public function staty() {
-        return view('site.staty');
+        $articles = Article::latest()->paginate(15);
+        return View('site.staty', compact('articles'));
     }
 
     //TODO Сделать view статьи и заполнить его.
     public function statya($slug) {
         $single_article = Article::whereSlug($slug)->firstOrFail();
-        return view('site.article');
+        return view('site.article', compact('single_article'));
     }
 
     public function politics() {

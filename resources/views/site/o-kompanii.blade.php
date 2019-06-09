@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+@section('title', 'О компании')
+@section('metakeywords', 'О компании РТИ трейдинг, Где находится РТИ Трейдинг')
+@section('metadescription', 'О компании РТИ трейдинг')
+
+
 @section('content')
 <section>
             <div class="">

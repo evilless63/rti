@@ -30,11 +30,11 @@
             <img src="{{ asset('/storage/' .$article->image)}}" alt="" class="img-fluid">
 
             <div class="form-group">
-                <label for="description">Описание:</label>
+                <label for="description">Краткое описание (в общем списке):</label>
                 <textarea class="form-control" name="short_description" id="ck_description" cols="30" rows="10">{{$article->short_description}}</textarea>
             </div>
             <div class="form-group">
-                <label for="variations_description">Описание допусков:</label>
+                <label for="variations_description">Подробное описание (на странице):</label>
                 <textarea class="form-control" name="description" id="ck_variations_description" cols="30" rows="10">{{$article->description}}</textarea>
             </div>
             <button type="submit" class="btn btn-success">Создать</button>

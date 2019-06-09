@@ -37,7 +37,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request);
+    
         // $this->validate($request, [
         //     'image' => 'required',
         //     'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
@@ -47,9 +47,8 @@ class ProductController extends Controller
         $data = $request->all();
         if($request->hasFile('image')) {
             $path = $request->file('image')->store('uploads', 'public');
+            $data['image'] = $path;
         }
-
-        $data['image'] = $path;
 
         $product = Product::create($data);
         if($request->filled('variations')) {
@@ -120,9 +119,9 @@ class ProductController extends Controller
 
         if($request->hasFile('image')) {
             $path = $request->file('image')->store('uploads', 'public');
+            $data['image'] = $path;
         }
-
-        $data['image'] = $path;
+        
         $product->update($data);
 
         $variations = $product->variations->all();

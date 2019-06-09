@@ -17,9 +17,9 @@ class CreateProductTable extends Migration
             $table->bigIncrements('id');
             $table->string('metadescription')->nullable();
             $table->string('metakeywords')->nullable();
-            $table->string('description')->default('');
-            $table->string('variations_description')->default('');
-            $table->string('variations_table')->default('');
+            $table->mediumText('description')->nullable();
+            $table->mediumText('variations_description')->nullable();
+            $table->mediumText('variations_table')->nullable();
             $table->string('image')->nullable();
             $table->string('name')->default('');
             $table->string('slug')->default('');

@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('title', 'Политика конфиденциальности')
+@section('metakeywords', 'Политика конфиденциальности РТИ Трейдинг')
+@section('metadescription', 'Политика конфиденциальности РТИ Трейдинг')
 
 @section('content')
 

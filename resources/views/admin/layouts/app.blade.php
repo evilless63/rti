@@ -62,38 +62,64 @@
         <div class="alert alert-info">{{ session('message') }}</div>
     @endif
 
-    <nav class="navbar navbar-toggleable-sm navbar-light bg-default">
-        <div class="container">
-        <a class="navbar-brand" href="{{ url('/admin') }}">
-            На главную
-        </a>
-        <a href="{{ route('product.index') }}">Продукция</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbar1">
-            <ul class="navbar-nav">
 
-            @guest
+    <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
 
-            @else
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-                                    document.getElementById('logout-form').submit();">
-                        Выход
-                    </a>
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="{{ url('/admin') }}">На главную</a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('product.index') }}">Продукция</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('article.index') }}">Статьи</a>
+        </li> 
+      </ul>
+      <!-- Links -->
+  
+    </div>
+    <!-- Collapsible content -->
 
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
-                </li>
-            @endguest
-            
-            </ul>
-        </div>
-        </div>
-    </nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbar1">
+        <ul class="navbar-nav">
+    
+        @guest
+    
+        @else
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('logout') }}"
+                onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                    Выход
+                </a>
+    
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
+            </li>
+        @endguest
+        
+        </ul>
+    
+    </div>
+  
+  </nav>
+  <!--/.Navbar-->
 
 
     <main class="py-4">

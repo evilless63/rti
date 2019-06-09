@@ -1,5 +1,17 @@
 @extends('layouts.app')
 
+@section('title')
+    Главная
+@endsection
+
+@section('metakeywords')
+    РТИ Трейдинг, Резино технические изделия в волжском, РТИ в волжском, Продукция РТИ.
+@endsection
+
+@section('metadescription')
+    РТИ Трейдинг - Лидер в области поставок резино-технических изделий в Волгоградской области, Волжском и Волгограде.
+@endsection
+
 
 @section('content')
 

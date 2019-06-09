@@ -4,6 +4,14 @@
     Товары - {{$single_product->name}}
 @endsection
 
+@section('metakeywords')
+    {{$single_product->metakeywords}}
+@endsection
+
+@section('metadescription')
+    {{$single_product->metadescription}}
+@endsection
+
 @section('content')
 <section>
             <div>

@@ -20,8 +20,8 @@ class CreateArticlesTable extends Migration
             $table->string('image')->nullable();
             $table->string('name')->default('');
             $table->string('slug')->default('');
-            $table->string('description')->default('');
-            $table->string('short_description')->default('');
+            $table->mediumText('description')->nullable();
+            $table->mediumText('short_description')->nullable();
             $table->timestamps();
         });
     }

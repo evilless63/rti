@@ -6,7 +6,7 @@
         <div class="col-md-12">
 
         <h2>Создание товара</h2>
-        <form method="post" action="{{ route('product.store') }}">
+        <form method="post" action="{{ route('product.store') }}" enctype="multipart/form-data">
             <div class="form-group">
                 @csrf
                 <label for="metadescription">Мета описание:</label>

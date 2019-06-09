@@ -45,7 +45,7 @@
                 <label for="variations">Варианты допусков (через запятую):</label>
                 <textarea class="form-control" name="variations" id="" cols="30" rows="10">{{implode(",", $product->variations->pluck('name')->all())}}</textarea>
             </div>
-            <button type="submit" class="btn btn-success">Создать</button>
+            <button type="submit" class="btn btn-success">Редактировать</button>
         </form>
 
         </div>

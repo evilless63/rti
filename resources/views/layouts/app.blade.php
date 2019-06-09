@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="keywords" content="@yield('metakeywords')" />
+  <meta name="description" content="@yield('metadescription')"  />
   <title>РТИ Трейдинг - @yield('title')</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -78,9 +80,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/staty">Статьи</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/dostavka">Доставка</a>
           </li>
 
         </ul>
