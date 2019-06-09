@@ -39,8 +39,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark blue-gradient fixed-top scrolling-navbar">
     <div class="container">
       <!-- Navbar brand -->
-      <a class="navbar-brand" href="#">
-        <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="mdb logo">
+      <a class="navbar-brand" href="/">
+        <img src="/img/logo.png" height="30" alt="mdb logo">
       </a>
 
       <!-- Collapse button -->
@@ -263,6 +263,120 @@
                 }
             });
 
+            $('#send_email_main').on('click', function(e){
+              e.preventDefault();
+                
+                let dataName = $('#form-name').val(); 
+                let dataEmail = $('#form-email').val(); 
+                let dataSubject = $('#form-subject').val();
+                let dataText = $('#form-text').val();
+                let dataPolitics = $('input#materialUnchecked').is(':checked');
+
+                data = {}
+                data.dataName = dataName
+                data.dataEmail = dataEmail
+                data.dataSubject = dataSubject
+                data.dataText = dataText
+                data.dataPolitics = dataPolitics
+
+                // let jsonData = JSON.stringify(data);
+                
+                $.ajax({
+                    headers: {
+                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    type: 'POST',
+                    url: '/send-request',
+                    data: {
+                      dataName:dataName,
+                      dataEmail:dataEmail,
+                      dataSubject:dataSubject,
+                      dataText:dataText,
+                      dataPolitics:dataPolitics,
+                    }, 
+                    success: function(data) {
+                        if($.isEmptyObject(data.error)){
+                          alert(data.success);
+                          $('#form-name').val(''); 
+                          $('#form-email').val(''); 
+                          $('#form-subject').val('');
+                          $('#form-text').val('');
+
+                          $(".print-error-msg").find("ul").html('');
+                          $(".print-error-msg").css('display','none');
+                        }else{
+                          printErrorMsg(data.error);
+                        }
+                    }
+                });
+
+                function printErrorMsg(msg) {
+                  $(".print-error-msg").find("ul").html('');
+                  $(".print-error-msg").css('display','block');
+                  $.each( msg, function( key, value ) {
+                    $(".print-error-msg").find("ul").append('<li>'+value+'</li>');
+                  });
+                }
+            })
+
+            $('#send_request_contacts').on('click', function(e){
+              e.preventDefault();
+                
+                let dataName = $('#form-name').val(); 
+                let dataEmail = $('#form-email').val(); 
+                let dataPhone = $('#form-phone').val();
+                let dataOrganization = $('#form-organization').val();
+                let dataText = $('#form-text').val();
+                let dataPolitics = $('input#materialUnchecked').is(':checked');
+
+                // data = {}
+                // data.dataName = dataName
+                // data.dataEmail = dataEmail
+                // data.dataPhone = dataPhone
+                // data.dataText = dataText
+                // data.dataPolitics = dataPolitics
+
+                // let jsonData = JSON.stringify(data);
+                
+                $.ajax({
+                    headers: {
+                      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    type: 'POST',
+                    url: '/send-request-contacts',
+                    data: {
+                      dataName:dataName,
+                      dataEmail:dataEmail,
+                      dataPhone:dataPhone,
+                      dataOrganization:dataOrganization,
+                      dataText:dataText,
+                      dataPolitics:dataPolitics,
+                    }, 
+                    success: function(data) {
+                        if($.isEmptyObject(data.error)){
+                          alert(data.success);
+                          $('#form-name').val(); 
+                          $('#form-email').val(''); 
+                          $('#form-phone').val('');
+                          $('#form-organization').val('');
+                          $('#form-text').val('');
+                          $(".print-error-msg").find("ul").html('');
+                          $(".print-error-msg").css('display','none');
+                        }else{
+                          printErrorMsg(data.error);
+                        }
+                    }
+                });
+
+                function printErrorMsg(msg) {
+                  $(".print-error-msg").find("ul").html('');
+                  $(".print-error-msg").css('display','block');
+                  $.each( msg, function( key, value ) {
+                    $(".print-error-msg").find("ul").append('<li>'+value+'</li>');
+                  });
+                }
+            })
+
             $('#send_order').on('click', function (e) {
                 e.preventDefault();
                 
@@ -270,13 +384,30 @@
                 let dataEmail = $('#form-email').val(); 
                 let dataPhone = $('#form-phone').val();
                 let dataText = $('#form-text').val();
-                let dataPolitics = $('#materialUnchecked').val();
+                let dataPolitics = $('input#materialUnchecked').is(':checked');
+                let link = document.URL;
 
                 let orderString = "";
-                $('.btn-deep-orange').each(function(){
-                  orderString = orderString + " " + $(this).text();    
+                $('button.btn-deep-orange[data-order-value]').each(function(){
+                  if(orderString = "") {
+                    orderString = $(this).attr('data-order-value');  
+                  } else {
+                    orderString = orderString + ", " + $(this).attr('data-order-value');  
+                  }
+                    
                 });
- 
+
+                data = {}
+                data.dataName = dataName
+                data.dataEmail = dataEmail
+                data.dataPhone = dataPhone
+                data.dataText = dataText
+                data.dataPolitics = dataPolitics
+                data.orderString = orderString
+                data.link = link
+
+                // let jsonData = JSON.stringify(data);
+                
                 $.ajax({
                     headers: {
                       'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -284,30 +415,39 @@
                     type: 'POST',
                     url: '/send-order',
                     data: {
-                      dataName: dataName,
-                      dataEmail : dataEmail,
-                      dataPhone : dataPhone,
-                      dataText : dataText,
-                      dataPolitics : dataPolitics,
-                      
-                    },
+                      dataName:dataName,
+                      dataEmail:dataEmail,
+                      dataPhone:dataPhone,
+                      dataText:dataText,
+                      dataPolitics:dataPolitics,
+                      orderString:orderString,
+                      link:link
+                    }, 
+                    success: function(data) {
+                        if($.isEmptyObject(data.error)){
+                          alert(data.success);
+                          $('#form-name').val(''); 
+                          $('#form-email').val(''); 
+                          $('#form-phone').val('');
+                          $('#form-text').val('');
 
-                    
-                    success: function (data) {
-                      console.log(data);
-                        // if (data.result) {
-                        //     $('#senderror').hide();
-                        //     $('#sendmessage').show();
-                        // } else {
-                        //     $('#senderror').show();
-                        //     $('#sendmessage').hide();
-                        // }
-                    },
-                    error: function () {
-                        $('#senderror').show();
-                        $('#sendmessage').hide();
+                          $(".print-error-msg").find("ul").html('');
+                          $(".print-error-msg").css('display','none');
+
+                          
+                        }else{
+                          printErrorMsg(data.error);
+                        }
                     }
                 });
+
+                function printErrorMsg(msg) {
+                  $(".print-error-msg").find("ul").html('');
+                  $(".print-error-msg").css('display','block');
+                  $.each( msg, function( key, value ) {
+                    $(".print-error-msg").find("ul").append('<li>'+value+'</li>');
+                  });
+                }
             });
         });
     </script>

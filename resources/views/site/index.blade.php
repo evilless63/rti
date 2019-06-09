@@ -106,7 +106,7 @@
                   <h3 class="my-4 wow fadeIn" data-wow-delay="0.3s">В наличии и под заказ</h3>
                 </li>
                 <li>
-                  <a href="tovary.html" class="btn btn-white btn-rounded btn-lg deep-orange-text font-weight-bold ml-lg-0 wow fadeIn"
+                  <a href="/tovary" class="btn btn-white btn-rounded btn-lg deep-orange-text font-weight-bold ml-lg-0 wow fadeIn"
                     data-wow-delay="0.3s"><i class="fas fa-play-circle deep-orange-text mr-2" aria-hidden="true"></i>
                     Перейти к просмотру</a>
                 </li>
@@ -155,7 +155,7 @@
                   <h3 class="my-4">Статьи и новости о компании и товарах</h3>
                 </li>
                 <li>
-                  <a href="staty.html" class="btn btn-white btn-rounded btn-lg deep-orange-text font-weight-bold ml-lg-0 wow fadeIn"
+                  <a href="/staty" class="btn btn-white btn-rounded btn-lg deep-orange-text font-weight-bold ml-lg-0 wow fadeIn"
                     data-wow-delay="0.3s"><i class="fas fa-play-circle deep-orange-text mr-2"
                       aria-hidden="true"></i>Перейти к чтению</a>
                 </li>
@@ -344,7 +344,7 @@
                 </div>
 
                 <div class="md-form">
-                  <input type="text" id="form-Subject" class="form-control">
+                  <input type="text" id="form-subject" class="form-control">
                   <label for="form-Subject">Тема письма</label>
                 </div>
 
@@ -359,7 +359,11 @@
                 </div>
 
                 <div class="text-center mt-4">
-                  <button class="btn btn-light-blue-gradient" id="send_email">Отправить письмо</button>
+                  <button class="btn btn-light-blue-gradient" id="send_email_main">Отправить письмо</button>
+                </div>
+
+                <div class="alert alert-danger print-error-msg" style="display:none">
+                  <ul></ul>
                 </div>
 
               </div>

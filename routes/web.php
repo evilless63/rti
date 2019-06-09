@@ -53,6 +53,8 @@ Route::get('/tovary/{slug}', 'SiteController@tovary')->name('tovary');
 Route::get('/tovary', 'SiteController@firsttovar')->name('firsttovar');
 
 Route::post('send-order', 'MailController@sendOrder');
+Route::post('send-request', 'MailController@sendRequestMain');
+Route::post('send-request-contacts', 'MailController@sendRequestContacts');
 
 
 

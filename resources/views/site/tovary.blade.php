@@ -13,7 +13,7 @@
 @endsection
 
 @section('content')
-<section>
+    <section>
             <div>
                 <img src="/img/backgrounds/page_bg1.jpg" style="width: 100%">
             </div>
@@ -24,6 +24,7 @@
     <main>
         <div class="container-fluid mt-5 mt-md-0 mb-5">
             <div class="row" style="margin-top: -100px;">
+
                 <!-- Grid column -->
                 <div class="col-md-3">
 
@@ -88,7 +89,7 @@
                                                 <!-- Secion heading -->
                                                 <h3 class="mb-5  title font-weight-bold wow fadeIn"
                                                     data-wow-delay="0.2s">
-                                                    <strong>{{$single_product->name}}</strong>
+                                                    <strong id="product_name">{{$single_product->name}}</strong>
                                                 </h3>
 
                                                 {!! $single_product->description !!}
@@ -202,6 +203,10 @@
                                             <div class="text-center mt-4">
                                                 <button class="btn btn-light-blue-gradient" id="send_order">Отправить
                                                     письмо</button>
+                                            </div>
+
+                                            <div class="alert alert-danger print-error-msg" style="display:none">
+                                                    <ul></ul>
                                             </div>
 
 
