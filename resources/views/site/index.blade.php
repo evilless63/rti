@@ -98,6 +98,9 @@
             <div
               class="h-100 d-flex justify-content-center align-items-center mask rgba-black-light white-text text-center">
               <ul class="list-unstyled animated fadeInUp col-md-12">
+                <li class="d-flex justify-content-center">
+                    <img src="/img/logo.png" class="wow fadeIn" data-wow-delay="0.3s" alt="mdb logo">
+                </li>  
                 <li>
                   <h1 class="display-4 font-weight-bold wow fadeIn" data-wow-delay="0.3s">Резинотехнические изделия</h1>
                   <hr class="hr-light wow fadeIn w-50" data-wow-delay="0.3s">
@@ -123,6 +126,9 @@
           <div class="view">
             <div class="h-100 d-flex justify-content-center align-items-center white-text text-center">
               <ul class="list-unstyled animated fadeInUp col-md-12">
+                  <li class="d-flex justify-content-center">
+                    <img src="/img/logo.png" class="wow fadeIn" data-wow-delay="0.3s" alt="mdb logo">
+                </li> 
                 <li>
                   <h1 class="display-4 font-weight-bold">Доставка со склада поставщика</h1>
                 </li>
@@ -148,6 +154,9 @@
             <div
               class="h-100 d-flex justify-content-center align-items-center mask rgba-black-light white-text text-center">
               <ul class="list-unstyled animated fadeInUp col-md-12">
+                  <li class="d-flex justify-content-center">
+                    <img src="/img/logo.png" class="wow fadeIn" data-wow-delay="0.3s" alt="mdb logo">
+                </li> 
                 <li>
                   <h1 class="display-4 font-weight-bold">Полезная информация о продукции</h1>
                 </li>
@@ -267,11 +276,11 @@
 
         <!-- Section description -->
         <p class=" w-responsive mx-auto mb-5 wow fadeIn" data-wow-delay="0.2s">
-          Просто позвоните или напишите нам и мы приступим к обсуждению сделки.</p>
+          Выберите продукцию из нашего ассортимента.</p>
 
-        <div class="row">
+        <div class="row mt-3">
           @foreach($products as $k=>$product)
-          <div class="col-md-4 wow fadeIn" data-wow-delay="0.2s">
+          <div class="col-md-3 wow fadeIn equalheight_mod" data-wow-delay="0.2s">
             <!-- Card -->
             <div class="card">
 
@@ -289,17 +298,18 @@
 
               <!-- Card content -->
               <div class="card-body">
-
                 <!-- Title -->
-                <h4 class="card-title">{{$product->name}}</h4>
+                <h6 class="card-title equal_height">{{$product->name}}</h6>
                 <hr>
-                <!-- Text -->
-                <p class="card-text">{!!str_limit($product->description, $limit = 100, $end = '...') !!}</p>
 
               </div>
             </div>
             <!-- Card -->
           </div>
+          @if($loop->iteration%4 == 0)
+              </div>
+              <div class="row mt-3">
+          @endif
           @endforeach
         </div>
       </section>
@@ -355,7 +365,7 @@
 
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="materialUnchecked">
-                    <label class="form-check-label" for="materialUnchecked">Согласен с <a href="politics.html">политикой конфиденциальности</a></label>
+                    <label class="form-check-label" for="materialUnchecked">Согласен с <a href="/politics">политикой конфиденциальности</a></label>
                 </div>
 
                 <div class="text-center mt-4">

@@ -5,18 +5,14 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 
-class Product extends Model
+class ProductCategory extends Model
 {
     protected $fillable = [
-        'metadescription', 'metakeywords', 'description', 'variations_description', 'variations_table', 'image', 'name', 'slug'
+        'metadescription', 'metakeywords', 'description', 'image', 'name', 'slug'
     ];
 
-    public function variations() {
-       return $this->hasMany('App\Variation');
-    }
-
-    public function product_category() {
-        return $this->belongsTo('App\ProductCategory', 'product_category_id', 'id');
+    public function products() {
+        return $this->hasMany('App\Product');
     }
 
     use Sluggable;

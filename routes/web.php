@@ -35,6 +35,14 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('admin/articles', 'ArticleController@index')->name('article.index');
     Route::get('admin/particleroduct/{slug}', 'ArticleController@show')->name('article.show');
 
+    //Дорабатываем категории
+    Route::post('admin/product-category', 'ProductController@store')->name('product-category.store');
+    Route::get('admin/product-category/create', 'ProductController@create')->name('product-category.create');
+    Route::patch('admin/product-category/{slug}', 'ProductController@update')->name('product-category.update');
+    Route::delete('admin/product-category/{slug}', 'ProductController@destroy')->name('product-category.destroy');
+    Route::get('admin/product-category/{slug}/edit', 'ProductController@edit')->name('product-category.edit');
+    Route::get('admin/product-categories', 'ProductController@index')->name('product-categories.index');
+    Route::get('admin/product-category/{slug}', 'ProductController@show')->name('product-category.show');
     // Route::resource('admin/article', 'ArticleController');
 });
 
