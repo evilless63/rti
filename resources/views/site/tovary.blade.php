@@ -201,10 +201,6 @@
 
                                             <br>
 
-                                            <div class="alert alert-danger print-error-msg" style="display:none">
-                                                    <ul></ul>
-                                            </div>
-
                                             <!--Body-->
                                             <div class="md-form">
                                                 <i class="fas fa-user prefix grey-text"></i>
@@ -236,7 +232,9 @@
                                                 <label class="form-check-label" for="materialUnchecked">Согласен с <a
                                                         href="/politics">политикой конфиденциальности*</a></label>
                                             </div>
-
+                                            <div class="alert alert-danger print-error-msg" style="display:none">
+                                                    <ul></ul>
+                                            </div>
                                             <div class="text-center mt-4">
                                                 <button class="btn btn-light-blue-gradient" id="send_order">Отправить
                                                     письмо</button>

@@ -20,7 +20,7 @@ class MailController extends Controller
         ],
         [
             'dataEmail.required' => 'Необходимо указать Ваш Email !',
-            'dataPolitics.required' => 'Необходимо согласиться с политикой конфиденциальности !',
+            'dataPolitics.accepted' => 'Необходимо согласиться с политикой конфиденциальности !',
         ]
         );
 
@@ -44,7 +44,7 @@ class MailController extends Controller
         ],
         [
             'dataEmail.required' => 'Необходимо указать Ваш Email !',
-            'dataPolitics.required' => 'Необходимо согласиться с политикой конфиденциальности !',
+            'dataPolitics.accepted' => 'Необходимо согласиться с политикой конфиденциальности !',
         ]
         );
 
@@ -67,7 +67,7 @@ class MailController extends Controller
         ],
         [
             'dataEmail.required' => 'Необходимо указать Ваш Email !',
-            'dataPolitics.required' => 'Необходимо согласиться с политикой конфиденциальности !',
+            'dataPolitics.accepted' => 'Необходимо согласиться с политикой конфиденциальности !',
         ]
     );
 

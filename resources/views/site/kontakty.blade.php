@@ -179,13 +179,13 @@
                             href="/politics">политикой конфиденциальности*</a></label>
                       </div>
 
+                      <div class="alert alert-danger print-error-msg" style="display:none">
+                          <ul></ul>
+                      </div>
+
                       <div class="text-center mt-4">
                         <button class="btn btn-light-blue-gradient" id="send_request_contacts">Отправить
                           письмо</button>
-                      </div>
-
-                      <div class="alert alert-danger print-error-msg" style="display:none">
-                        <ul></ul>
                       </div>
 
 

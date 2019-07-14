@@ -209,15 +209,25 @@
   <script type="text/javascript" src="{{ asset('js/mdb.min.js') }}"></script>
 
     <script>
+      
+        function isMobile() {
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                  return true; 
+            }
+            return false;
+        }
+
         $(document).ready(function () {
           new WOW().init();
 
-    
-            $(".sticky").sticky({
-              topSpacing: 90,
-              zIndex: 2,
-              stopper: "#stickyStopper"
-            });
+            if(isMobile() === false) {
+              $(".sticky").sticky({
+                topSpacing: 90,
+                zIndex: 2,
+                stopper: "#stickyStopper"
+              });
+            }
+            
 
             $('button[data-type="order_button"]').on('click', function (event) {
                 event.preventDefault();
