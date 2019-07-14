@@ -1,5 +1,11 @@
 .blue-gradient {
-    background: -webkit-linear-gradient(50deg, #1e6f90, #13519f) !important;
-    background: -o-linear-gradient(50deg, #45cafc, #303f9f) !important;
-    background: linear-gradient(40deg, #1e6f90, #13519f) !important;
-}
+    background: -webkit-linear-gradient(50deg, #455c9e, #122f84) !important;
+        background: -o-linear-gradient(50deg, #455c9e, #122f84) !important;
+        background: linear-gradient(40deg, #455c9e, #122f84) !important;
+    }
+    
+    .equal_height {
+        height: 100px;
+    }
+    
+    

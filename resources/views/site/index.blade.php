@@ -350,7 +350,7 @@
 
                 <div class="md-form">
                   <input type="text" id="form-email" class="form-control">
-                  <label for="form-email">Ваш контактный емейл</label>
+                  <label for="form-email">Ваш контактный емейл*</label>
                 </div>
 
                 <div class="md-form">
@@ -365,7 +365,7 @@
 
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="materialUnchecked">
-                    <label class="form-check-label" for="materialUnchecked">Согласен с <a href="/politics">политикой конфиденциальности</a></label>
+                    <label class="form-check-label" for="materialUnchecked">Согласен с <a href="/politics">политикой конфиденциальности*</a></label>
                 </div>
 
                 <div class="text-center mt-4">

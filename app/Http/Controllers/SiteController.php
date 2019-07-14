@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Product;
 use App\Article;
+use App\ProductCategory;
 
 class SiteController extends Controller
 {
@@ -41,13 +42,15 @@ class SiteController extends Controller
     public function tovary($slug) {
 
         $products = Product::all();
+        $product_categories = ProductCategory::all();
         $single_product = Product::whereSlug($slug)->firstOrFail();
-        return view('site.tovary', compact('products', 'single_product'));
+        return view('site.tovary', compact('products', 'single_product', 'product_categories'));
     }
 
     public function firsttovar() {
         $products = Product::all();
         $single_product = Product::firstOrFail();
-        return view('site.tovary', compact('products', 'single_product'));
+        $product_categories = ProductCategory::all();
+        return view('site.tovary', compact('products', 'single_product', 'product_categories'));
     }
 }

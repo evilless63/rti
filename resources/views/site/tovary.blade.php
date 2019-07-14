@@ -14,8 +14,14 @@
 
 @section('content')
     <section>
-            <div>
-                <img src="/img/backgrounds/page_bg1.jpg" style="width: 100%">
+            <div style="background:url('/img/backgrounds/page_bg1.jpg'); background-size:cover; height: 410px;" class="d-flex justify-content-center">
+                <table style="height: 90%;">
+                    <tr>
+                        <td class="align-middle">
+                    <img src="/img/logo.png" class="wow fadeIn align-middle" data-wow-delay="0.3s" alt="mdb logo">
+                    </td>
+                    </tr>
+                </table>
             </div>
         </section>
 
@@ -26,10 +32,10 @@
             <div class="row" style="margin-top: -100px;">
 
                 <!-- Grid column -->
-                <div class="col-md-3">
+                <div class="col-md-3 ">
 
                     <!-- Card -->
-                    <div class="card pb-5 mx-md-3">
+                    <div class="card pb-5 mx-md-3 py-4 sticky">
 
                         <div class="card-body">
 
@@ -38,12 +44,39 @@
                                 Каталог продукции
                             </h3>
 
-                            <nav class="nav flex-column md-pills pills-unique  py-4">
-                                @foreach($products as $k=>$product)
-                                <a class="nav-link active {{ Request::path() === '/tovary/$product->slug' ? 'btn-deep-orange' : 'blue-gradient' }}" href="{{ route('tovary', $product->slug) }}">{{$product->name}}</a>
-                                @endforeach
-                            </nav>
+                            <!--Accordion wrapper-->
+                            <div class="accordion md-accordion" id="accordionEx1" role="tablist" aria-multiselectable="true">
 
+                                @foreach($product_categories as $p_category)
+                                    <!-- Accordion card -->
+                                    <div class="card">
+                                
+                                        <!-- Card header -->
+                                        <div class="card-header" role="tab" id="headingTwo{{$p_category->id}}">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx1" href="#collapseTwo{{$p_category->id}}"
+                                            aria-expanded="false" aria-controls="collapseTwo{{$p_category->id}}">
+                                            <h5 class="mb-0">
+                                                {{$p_category->name}} <i class="fas fa-angle-down rotate-icon"></i>
+                                            </h5>
+                                            </a>
+                                        </div>
+                                    
+                                        <!-- Card body -->
+                                        <div id="collapseTwo{{$p_category->id}}" class="collapse" role="tabpanel" aria-labelledby="headingTwo{{$p_category->id}}"
+                                            data-parent="#accordionEx1">
+                                            <div class="card-body">
+                                                1
+                                                @foreach($p_category->products()->get() as $k=>$product)
+                                                <a class="nav-link active {{ Request::path() === '/tovary/$product->slug' ? 'btn-deep-orange' : 'blue-gradient' }}" href="{{ route('tovary', $product->slug) }}">{{$product->name}}</a>
+                                                @endforeach
+                                            </div>
+                                        </div>
+                                
+                                    </div>
+                                    <!-- Accordion card -->
+                                @endforeach
+                                </div>
+                                <!-- Accordion wrapper -->
 
                         </div>
                         <!-- Card -->
@@ -168,11 +201,15 @@
 
                                             <br>
 
+                                            <div class="alert alert-danger print-error-msg" style="display:none">
+                                                    <ul></ul>
+                                            </div>
+
                                             <!--Body-->
                                             <div class="md-form">
                                                 <i class="fas fa-user prefix grey-text"></i>
                                                 <input type="text" id="form-name" class="form-control">
-                                                <label for="form-name">Как к Вам обращаться*</label>
+                                                <label for="form-name">Как к Вам обращаться</label>
                                             </div>
 
                                             <div class="md-form">
@@ -184,7 +221,7 @@
                                             <div class="md-form">
                                                 <i class="fas fa-envelope prefix grey-text"></i>
                                                 <input type="text" id="form-phone" class="form-control">
-                                                <label for="form-email">Ваш контактный телефон*</label>
+                                                <label for="form-email">Ваш контактный телефон</label>
                                             </div>
 
                                             <div class="md-form">
@@ -197,7 +234,7 @@
                                             <div class="form-check">
                                                 <input type="checkbox" class="form-check-input" id="materialUnchecked">
                                                 <label class="form-check-label" for="materialUnchecked">Согласен с <a
-                                                        href="politics.html">политикой конфиденциальности</a></label>
+                                                        href="/politics">политикой конфиденциальности*</a></label>
                                             </div>
 
                                             <div class="text-center mt-4">
@@ -205,9 +242,7 @@
                                                     письмо</button>
                                             </div>
 
-                                            <div class="alert alert-danger print-error-msg" style="display:none">
-                                                    <ul></ul>
-                                            </div>
+                                            
 
 
 

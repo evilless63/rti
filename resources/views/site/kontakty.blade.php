@@ -150,7 +150,7 @@
                       <!--Body-->
                       <div class="md-form">
                         <input type="text" id="form-name" class="form-control">
-                        <label for="form-name">Как к Вам обращаться*</label>
+                        <label for="form-name">Как к Вам обращаться</label>
                       </div>
 
                       <div class="md-form">
@@ -160,23 +160,23 @@
 
                       <div class="md-form">
                         <input type="text" id="form-phone" class="form-control">
-                        <label for="form-email">Ваш контактный телефон*</label>
+                        <label for="form-email">Ваш контактный телефон</label>
                       </div>
 
                       <div class="md-form">
                           <input type="text" id="form-organization" class="form-control">
-                          <label for="form-email">Из какой организации вы обращаетесь*</label>
+                          <label for="form-email">Из какой организации вы обращаетесь</label>
                         </div>
 
                       <div class="md-form">
                         <textarea id="form-text" class="form-control md-textarea" rows="3"></textarea>
-                        <label for="form-text">Ваше сообщение*</label>
+                        <label for="form-text">Ваше сообщение</label>
                       </div>
 
                       <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="materialUnchecked">
                         <label class="form-check-label" for="materialUnchecked">Согласен с <a
-                            href="politics.html">политикой конфиденциальности*</a></label>
+                            href="/politics">политикой конфиденциальности*</a></label>
                       </div>
 
                       <div class="text-center mt-4">

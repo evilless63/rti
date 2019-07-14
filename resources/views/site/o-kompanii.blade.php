@@ -7,9 +7,15 @@
 
 @section('content')
 <section>
-            <div class="">
-                <img src="img/backgrounds/page_bg1.jpg" style="width: 100%">
-            </div>
+        <div style="background:url('/img/backgrounds/page_bg1.jpg'); background-size:cover; height: 410px;" class="d-flex justify-content-center">
+            <table style="height: 90%;">
+                <tr>
+                    <td class="align-middle">
+                <img src="/img/logo.png" class="wow fadeIn align-middle" data-wow-delay="0.3s" alt="mdb logo">
+                </td>
+                </tr>
+            </table>
+        </div>
         </section>
 
     </header>

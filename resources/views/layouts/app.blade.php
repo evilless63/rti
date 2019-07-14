@@ -99,7 +99,7 @@
         
     
 <!-- Footer -->
-<footer class="page-footer font-small blue-gradient pt-4">
+<footer class="page-footer font-small blue-gradient pt-4" id="stickyStopper">
 
 <!-- Footer Links -->
 <div class="container text-center text-md-left">
@@ -211,6 +211,14 @@
     <script>
         $(document).ready(function () {
           new WOW().init();
+
+    
+            $(".sticky").sticky({
+              topSpacing: 90,
+              zIndex: 2,
+              stopper: "#stickyStopper"
+            });
+
             $('button[data-type="order_button"]').on('click', function (event) {
                 event.preventDefault();
 
