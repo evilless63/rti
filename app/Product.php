@@ -8,7 +8,7 @@ use Cviebrock\EloquentSluggable\Sluggable;
 class Product extends Model
 {
     protected $fillable = [
-        'metadescription', 'metakeywords', 'description', 'variations_description', 'variations_table', 'image', 'name', 'slug'
+        'metadescription', 'metakeywords', 'description', 'variations_description', 'variations_table', 'image', 'name', 'slug', 'product_category_id'
     ];
 
     public function variations() {

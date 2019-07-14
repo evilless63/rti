@@ -45,6 +45,25 @@
                 <label for="variations">Варианты допусков (через запятую):</label>
                 <textarea class="form-control" name="variations" id="" cols="30" rows="10">{{implode(",", $product->variations->pluck('name')->all())}}</textarea>
             </div>
+
+            <div class="form-group">
+
+                    @foreach($product_categories as $product_category)
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="materialUnchecked{{$product_category->id}}" name="product_category_id" value="{{$product_category->id}}"
+                        
+                        @if($product->product_category_id == $product_category->id)
+                            checked="checked"
+                            @endif
+
+                        >
+                        <label class="form-check-label" for="materialUnchecked{{$product_category->id}}">{{ucfirst($product_category->name)}}</label>
+                    </div>
+                    
+                    @endforeach
+
+            </div>
             <button type="submit" class="btn btn-success">Редактировать</button>
         </form>
 

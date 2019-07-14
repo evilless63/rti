@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use App\ProductCategory;
 use App\Variation;
 
 class ProductController extends Controller
@@ -26,7 +27,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return View('admin.create-product');
+        $product_categories = ProductCategory::latest()->get();
+        return View('admin.create-product',compact('product_categories'));
     }
 
     /**
@@ -99,8 +101,9 @@ class ProductController extends Controller
      */
     public function edit($slug)
     {
+        $product_categories = ProductCategory::latest()->get();
         $product = Product::whereSlug($slug)->firstOrFail();
-        return view('admin.edit-product', compact('product'));
+        return view('admin.edit-product', compact('product','product_categories'));
     }
 
     /**

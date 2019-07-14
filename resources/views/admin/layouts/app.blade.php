@@ -81,7 +81,10 @@
       <!-- Links -->
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('product.index') }}">Продукция</a>
+            <a class="nav-link" href="{{ route('product-categories.index') }}">Категории товаров</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ route('product.index') }}">Товары</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="{{ route('article.index') }}">Статьи</a>

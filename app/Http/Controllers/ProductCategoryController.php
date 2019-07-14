@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\ProductCategory;
 
 class ProductCategoryController extends Controller
 {
@@ -13,7 +14,8 @@ class ProductCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $product_categories = ProductCategory::latest()->paginate(15);
+        return View('admin.product-categories', compact('product_categories'));
     }
 
     /**
@@ -23,7 +25,7 @@ class ProductCategoryController extends Controller
      */
     public function create()
     {
-        //
+        return View('admin.create-product-category');
     }
 
     /**
@@ -34,7 +36,16 @@ class ProductCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        if($request->hasFile('image')) {
+            $path = $request->file('image')->store('uploads', 'public');
+            $data['image'] = $path;
+        }
+
+        $product_category = ProductCategory::create($data);
+        $product_categories = ProductCategory::latest()->paginate(15);
+        $request->session()->flash('alert-success', 'Информация успешно добавлена !');
+        return View('admin.product-categories', compact('product_categories'));
     }
 
     /**
@@ -43,9 +54,21 @@ class ProductCategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
-        //
+        if (is_numeric($slug)) {
+            // Get post for slug.
+            $product_category = Product::findOrFail($slug);
+    
+            return Redirect::to(route('product.show', $product_category->slug), 301);
+        }
+    
+        // Get post for slug.
+        $product_category = ProductCategory::whereSlug($slug)->firstOrFail();
+    
+        return view('product-category.show', [
+            'product_category' => $product_category
+        ]);
     }
 
     /**
@@ -54,9 +77,10 @@ class ProductCategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($slug)
     {
-        //
+        $product_category = ProductCategory::whereSlug($slug)->firstOrFail();
+        return view('admin.edit-product-category', compact('product_category'));
     }
 
     /**
@@ -66,9 +90,22 @@ class ProductCategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $slug)
     {
-        //
+        $product_category = ProductCategory::whereSlug($slug)->FirstOrFail();
+
+        $data = $request->all();
+
+        if($request->hasFile('image')) {
+            $path = $request->file('image')->store('uploads', 'public');
+            $data['image'] = $path;
+        }
+        
+        $product_category->update($data);
+
+        $product_categories = ProductCategory::latest()->paginate(15);
+        $request->session()->flash('alert-success', 'Информация успешно обновлена !');
+        return View('admin.product-categories', compact('product_categories'));
     }
 
     /**
@@ -77,8 +114,13 @@ class ProductCategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($slug, Request $request)
     {
-        //
+        $product_category = ProductCategory::whereSlug($slug)->FirstOrFail();
+
+        $product_category->delete();
+        $product_categories = ProductCategory::latest()->paginate(15);
+        $request->session()->flash('alert-success', 'Информация успешно удалена !');
+        return View('admin.product-categories', compact('product_categories'));
     }
 }
