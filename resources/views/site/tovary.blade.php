@@ -64,10 +64,11 @@
                                         <!-- Card body -->
                                         <div id="collapseTwo{{$p_category->id}}" class="collapse" role="tabpanel" aria-labelledby="headingTwo{{$p_category->id}}"
                                             data-parent="#accordionEx1">
-                                            <div class="card-body">
-                                                1
+                                            <div class="card-body" style="    padding: 0.1rem 1.25rem;">
                                                 @foreach($p_category->products()->get() as $k=>$product)
-                                                <a class="nav-link active {{ Request::path() === '/tovary/$product->slug' ? 'btn-deep-orange' : 'blue-gradient' }}" href="{{ route('tovary', $product->slug) }}">{{$product->name}}</a>
+                                                {{-- <a class="nav-link active {{ Request::path() === '/tovary/$product->slug' ? 'btn-deep-orange' : 'blue-gradient' }}" href="{{ route('tovary', $product->slug) }}">{{$product->name}}</a> --}}
+                                                <a class="nav-link active" style="    color: #007bff;
+                                                font-size: 1.1rem;">{{$product->name}}</a>
                                                 @endforeach
                                             </div>
                                         </div>
