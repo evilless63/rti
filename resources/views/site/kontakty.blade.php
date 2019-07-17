@@ -128,6 +128,87 @@
 
                   <hr>
 
+                  <h3 class="font-weight-bold title mt-5 mb-4">Отдел продаж</h3>
+                  <div class="row pt-2 mb-5 text-left">
+                    <div class="col-lg-6 col-md-6 mb-4">
+                    <!-- Card -->
+                    <div class="card card-cascade">
+                    
+                      <!-- Card image -->
+                      <div class="view view-cascade gradient-card-header blue-gradient">
+                    
+                        <!-- Title -->
+                        <h2 class="card-header-title mb-3">Дудакова Ольга</h2>
+                        <!-- Subtitle -->
+                        <p class="card-header-subtitle mb-0">Менеджер отдела продаж</p>
+                    
+                      </div>
+                    
+                      <!-- Card content -->
+                      <div class="card-body card-body-cascade text-center">
+                    
+                        <!-- Text -->
+                        
+                        <p><i class="fas fa-envelope"> </i> olya-ati@mail.ru</p>
+                        <p><i class="fas fa-phone-square"></i> +7 (905) 433-35-85</p>
+                        <hr>
+                    
+                        <!-- Twitter -->
+           <!--              <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"> </i></a>
+           Linkedin
+           <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"> </i></a>
+           Facebook
+           <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"> </i></a>
+           Email
+           <a class="px-2 fa-lg email-ic"><i class="fas fa-envelope"> </i></a>
+                                -->
+                      </div>
+                    
+                    </div>
+                    <!-- Card -->
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4">
+                    <!-- Card -->
+                    <div class="card card-cascade">
+                    
+                      <!-- Card image -->
+                      <div class="view view-cascade gradient-card-header blue-gradient">
+                    
+                        <!-- Title -->
+                        <h2 class="card-header-title mb-3">Чернова Наталья</h2>
+                        <!-- Subtitle -->
+                        <p class="card-header-subtitle mb-0">Менеджер</p>
+                    
+                      </div>
+                    
+                      <!-- Card content -->
+                      <div class="card-body card-body-cascade text-center">
+                    
+                        <!-- Text -->
+                       
+                        <p><i class="fas fa-envelope"> </i> kozhko-ni@mail.ru</p>
+                        <p><i class="fas fa-phone-square"></i> +7 (905) 746-23-55</p>
+                        <hr>
+                    
+                        <!-- Twitter -->
+         <!--                <a class="px-2 fa-lg tw-ic"><i class="fab fa-twitter"> </i></a>
+         Linkedin
+         <a class="px-2 fa-lg li-ic"><i class="fab fa-linkedin-in"> </i></a>
+         Facebook
+         <a class="px-2 fa-lg fb-ic"><i class="fab fa-facebook-f"> </i></a>
+         Email
+         <a class="px-2 fa-lg email-ic"><i class="fas fa-envelope"> </i></a>
+                              -->
+                      </div>
+                    
+                    </div>
+                    <!-- Card -->
+                    </div>
+                  </div>
+                    
+                  
+                  <hr>
+
                   <div class="row pt-2 mt-5">
                     <div class="col-lg-12  col-md-12 wow fadeIn" data-wow-delay="0.4s">
                       <!-- Secion heading -->

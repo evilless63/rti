@@ -56,7 +56,12 @@
         <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item">
             <a class="nav-link">
-              <i class="fas fa-phone-square title"></i> +7 (8443) 31–05–75
+              <i class="fas fa-phone-square title"></i> +7 (905) 433-35-85
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <i class="fas fa-phone-square title"></i> +7 (905) 746-23-55
             </a>
           </li>
           <li class="nav-item">
@@ -220,14 +225,17 @@
         $(document).ready(function () {
           new WOW().init();
 
-            if(isMobile() === false) {
-              $(".sticky").sticky({
-                topSpacing: 90,
-                zIndex: 2,
-                stopper: "#stickyStopper"
-              });
-            }
-            
+//            if(isMobile() === false) {
+//   $(".sticky").sticky({
+//     topSpacing: 90,
+//     zIndex: 2,
+//     stopper: "#stickyStopper"
+//   });
+// } 
+        
+        // MDB Lightbox Init
+            $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+  
 
             $('button[data-type="order_button"]').on('click', function (event) {
                 event.preventDefault();

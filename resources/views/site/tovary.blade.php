@@ -68,7 +68,7 @@
                                                 @foreach($p_category->products()->get() as $k=>$product)
                                                 {{-- <a class="nav-link active {{ Request::path() === '/tovary/$product->slug' ? 'btn-deep-orange' : 'blue-gradient' }}" href="{{ route('tovary', $product->slug) }}">{{$product->name}}</a> --}}
                                                 <a class="nav-link active" style="    color: #007bff;
-                                                font-size: 1.1rem;">{{$product->name}}</a>
+                                                font-size: 1.1rem;" href="{{ route('tovary', $product->slug) }}">{{$product->name}}</a>
                                                 @endforeach
                                             </div>
                                         </div>

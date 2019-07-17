@@ -103,8 +103,8 @@
                                         <!-- Grid column -->
 
                                         <!-- Grid column -->
-                                        <div class="col-lg-6 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
-
+                                        <!-- <div class="col-lg-6 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
+                                        
                                             <div class="text-left">
                                                 <h6 class="title font-weight-bold   spacing mt-4 mx-4">
                                                     <i class="fas fa-square orange-text mr-2" aria-hidden="true"></i>
@@ -114,7 +114,7 @@
                                                     craft beer labore wes anderson cred.
                                                 </p>
                                             </div>
-
+                                        
                                             <div class="text-left">
                                                 <h6 class="title font-weight-bold  spacing mt-4 mx-4">
                                                     <i class="fas fa-square orange-text mr-2" aria-hidden="true"></i>
@@ -124,7 +124,7 @@
                                                     craft beer labore wes anderson
                                                 </p>
                                             </div>
-
+                                        
                                             <div class="text-left">
                                                 <h6 class="title font-weight-bold  spacing mt-4 mx-4">
                                                     <i class="fas fa-square orange-text mr-2" aria-hidden="true"></i>
@@ -134,105 +134,173 @@
                                                     craft beer labore wes anderson cred
                                                 </p>
                                             </div>
-
-                                        </div>
+                                        
+                                        </div> -->
                                         <!-- Grid column -->
 
                                     </div>
                                     <!-- Grid row -->
 
                                 </section>
+                                
+                                <!-- Section: About 2 -->
+                                <!-- <section id="gallery" class="mt-5 mb-5 pb-3 wow fadeIn" data-wow-delay="0.2s">
+                                
+                                        <div class="row pt-4 mt-5">
+                                  <div class="col-md-12 wow fadeIn">
+                                      
+                                       Secion heading
+                                            <h3 class="mb-5  title font-weight-bold wow fadeIn"
+                                                data-wow-delay="0.2s">
+                                                <strong>Галлерея продукции</strong>
+                                            </h3>
+                                            
+                                    <div id="mdb-lightbox-ui"></div>
+                                    <div class="mdb-lightbox no-margin">
+                                      <figure class="col-md-4">
+                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg" data-size="1600x1067">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(117).jpg" class="img-fluid">
+                                        </a>
+                                      </figure>
+                                      <figure class="col-md-4">
+                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(98).jpg" data-size="1600x1067">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(98).jpg" class="img-fluid" />
+                                        </a>
+                                      </figure>
+                                      <figure class="col-md-4">
+                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(131).jpg" data-size="1600x1067">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(131).jpg" class="img-fluid" />
+                                        </a>
+                                      </figure>
+                                      <figure class="col-md-4">
+                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(123).jpg" data-size="1600x1067">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(123).jpg" class="img-fluid" />
+                                        </a>
+                                      </figure>
+                                      <figure class="col-md-4">
+                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(118).jpg" data-size="1600x1067">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(118).jpg" class="img-fluid" />
+                                        </a>
+                                      </figure>
+                                      <figure class="col-md-4">
+                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(128).jpg" data-size="1600x1067">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(128).jpg" class="img-fluid" />
+                                        </a>
+                                      </figure>
+                                      <figure class="col-md-4">
+                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(132).jpg" data-size="1600x1067">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(132).jpg" class="img-fluid" />
+                                        </a>
+                                      </figure>
+                                      <figure class="col-md-4">
+                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg" data-size="1600x1067">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).jpg" class="img-fluid" />
+                                        </a>
+                                      </figure>
+                                      <figure class="col-md-4">
+                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(133).jpg" data-size="1600x1067">
+                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(133).jpg" class="img-fluid" />
+                                        </a>
+                                      </figure>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                                    </div>
+                                    Grid row
+                                
+                                </section> -->
                                 <!-- Section: About 2 -->
 
                                 <hr>
 
                                 <!-- Section: Team -->
-                                <section class="team-section pb-5 mb-4">
-
-                                    <!-- Secion heading -->
+                                <!-- <section class="team-section pb-5 mb-4">
+                                
+                                    Secion heading
                                     <h3 class="my-5 pt-4 text-center title font-weight-bold wow fadeIn"
                                         data-wow-delay="0.2s">
                                         <strong>Встречайте нашу дружную команду</strong>
                                     </h3>
-                                    <!-- Section description -->
+                                    Section description
                                     <p class=" w-responsive text-center mx-auto mb-5 wow fadeIn">Все эти люди с радостью готовы помочь Вам в вопросах покупки резинотехнических изделий и обеспечить наивысшее касчество обслуживания.</p>
-
-                                    <!-- Grid row -->
+                                
+                                    Grid row
                                     <div class="row mb-lg-4 text-center text-md-left">
-
-                                        <!-- Grid column -->
+                                
+                                        Grid column
                                         <div class="col-lg-6 col-md-12 mb-5 wow fadeIn">
-
+                                
                                             <div class="col-md-6 float-left">
                                                 <div class="avatar mx-auto white mb-md-0 mb-4">
                                                     <img src="img/customers/man.jpg"
                                                         class="rounded z-depth-1" alt="First sample avatar image">
                                                 </div>
                                             </div>
-
+                                
                                             <div class="col-md-6 float-right">
                                                 <h4>
                                                     <strong>Фамилия имя</strong>
                                                 </h4>
                                                 <h6 class="font-weight-bold  mb-4">Должность</h6>
                                                 <p class="">Описание сотрудника</p>
-
+                                
                                             </div>
-
+                                
                                         </div>
-                                        <!-- Grid column -->
-
-                                        <!-- Grid column -->
+                                        Grid column
+                                
+                                        Grid column
                                         <div class="col-lg-6 col-md-12 mb-5 wow fadeIn">
-
+                                
                                             <div class="col-md-6 float-left">
                                                 <div class="avatar mx-auto white mb-md-0 mb-4">
                                                     <img src="img/customers/wooman.jpg"
                                                         class="rounded z-depth-1" alt="Second sample avatar image">
                                                 </div>
                                             </div>
-
+                                
                                             <div class="col-md-6 float-right">
                                                 <h4>
                                                     <strong>Фамилия имя</strong>
                                                 </h4>
                                                 <h6 class="font-weight-bold  mb-4">Должность</h6>
                                                 <p class="">Описание сотрудника</p>
-
+                                
                                             </div>
-
+                                
                                         </div>
-                                        <!-- Grid column -->
-
+                                        Grid column
+                                
                                     </div>
-                                    <!-- Grid row -->
-
-                                    <!-- Grid row -->
+                                    Grid row
+                                
+                                    Grid row
                                     <div class="row text-center text-md-left wow fadeIn">
-
-                                        <!-- Grid column -->
+                                
+                                        Grid column
                                         <div class="col-lg-6 col-md-12 mb-5">
-
+                                
                                             <div class="col-md-6 float-left">
                                                 <div class="avatar mx-auto white mb-md-0 mb-4">
                                                     <img src="img/customers/man.jpg"
                                                         class="rounded z-depth-1" alt="Fourth sample avatar image">
                                                 </div>
                                             </div>
-
+                                
                                             <div class="col-md-6 float-right">
                                                 <h4>
                                                     <strong>Фамилия имя</strong>
                                                 </h4>
                                                 <h6 class="font-weight-bold  mb-4">Должность</h6>
                                                 <p class="">Описание сотрудника</p>
-
+                                
                                             </div>
-
+                                
                                         </div>
-                                        <!-- Grid column -->
-
-                                        <!-- Grid column -->
+                                        Grid column
+                                
+                                        Grid column
                                         <div class="col-lg-6 col-md-12 mb-5 wow fadeIn">
                                             <div class="col-md-6 float-left">
                                                 <div class="avatar mx-auto white mb-md-0 mb-4">
@@ -240,23 +308,23 @@
                                                         class="rounded z-depth-1" alt="Fifth sample avatar image">
                                                 </div>
                                             </div>
-
+                                
                                             <div class="col-md-6 float-right">
                                                 <h4>
                                                     <strong>Фамилия имя</strong>
                                                 </h4>
                                                 <h6 class="font-weight-bold  mb-4">Должность</h6>
                                                 <p class="">Описание сотрудника</p>
-
+                                
                                             </div>
-
+                                
                                         </div>
-                                        <!-- Grid column -->
-
+                                        Grid column
+                                
                                     </div>
-                                    <!-- Grid row -->
-
-                                </section>
+                                    Grid row
+                                
+                                </section> -->
                                 <!-- Section: Team -->
 
                             </div>
@@ -283,43 +351,43 @@
                 <div class="container my-5">
 
                     <!-- Section heading -->
-                    <h3 class="text-center mb-5 pb-4 white-text font-weight-bold wow fadeIn"
-                        data-wow-delay="0.2s">
-                        <strong>Некоторые факты о нас</strong>
-                    </h3>
+                   <!--  <h3 class="text-center mb-5 pb-4 white-text font-weight-bold wow fadeIn"
+                       data-wow-delay="0.2s">
+                       <strong>Некоторые факты о нас</strong>
+                   </h3> -->
 
                     <!-- First row -->
-                    <div class="row text-center">
-
-                        <!-- First column -->
+                    <!-- <div class="row text-center">
+                    
+                        First column
                         <div class="col-md-3 mb-2">
                             <h1 class="white-text mb-1 font-weight-bold">+950</h1>
                             <p class="white-text">Довольных клиентов</p>
                         </div>
-                        <!-- First column -->
-
-                        <!-- Second column -->
+                        First column
+                    
+                        Second column
                         <div class="col-md-3 mb-2">
                             <h1 class="white-text mb-1 font-weight-bold">+150</h1>
                             <p class="white-text">Партнеров по всей стране</p>
                         </div>
-                        <!-- Second column -->
-
-                        <!-- Third column -->
+                        Second column
+                    
+                        Third column
                         <div class="col-md-3 mb-2">
                             <h1 class="white-text mb-1 font-weight-bold">+2000</h1>
                             <p class="white-text">Товарных позиций</p>
                         </div>
-                        <!-- Third column -->
-
-                        <!-- Fourth column -->
+                        Third column
+                    
+                        Fourth column
                         <div class="col-md-3">
                             <h1 class="white-text mb-1 font-weight-bold">+246</h1>
                             <p class="white-text">Жуков порабощено</p>
                         </div>
-                        <!-- Fourth column -->
-
-                    </div>
+                        Fourth column
+                    
+                    </div> -->
                 </div>
             </div>
             <!-- Streak -->
