@@ -65,7 +65,7 @@
 
                                             <!-- Description -->
                                             <p align="justify" class="wow fadeIn">
-                                                Вот уже "" лет мы занимаемся поставками резинотехнических изделий. За это время мы выработали единые стандарты работы с нашими бизнес-парнерами.
+                                                Вот уже 10 лет мы занимаемся поставками резинотехнических изделий. За это время мы выработали единые стандарты работы с нашими бизнес-парнерами.
                                             </p>
                                             <p align="justify" class="wow fadeIn">Приглашаем Вас присоединиться к нам.</p>
 
@@ -103,39 +103,13 @@
                                         <!-- Grid column -->
 
                                         <!-- Grid column -->
-                                        <!-- <div class="col-lg-6 col-md-12 mb-3 wow fadeIn" data-wow-delay="0.4s">
+                                        <div class="col-lg-5 col-md-12 mb-3 wow fadeIn text-center align-middle" data-wow-delay="0.4s">
                                         
-                                            <div class="text-left">
-                                                <h6 class="title font-weight-bold   spacing mt-4 mx-4">
-                                                    <i class="fas fa-square orange-text mr-2" aria-hidden="true"></i>
-                                                    <strong>Lorem ipsum dolor sit amet</strong>
-                                                </h6>
-                                                <p class=" font-small mx-4">Nihil anim keffiyeh helvetica,
-                                                    craft beer labore wes anderson cred.
-                                                </p>
-                                            </div>
+                                            <!-- Image -->
+                                            <img src="img/logo.png"
+                                                class="img-fluid z-depth-1 rounded" alt="My photo">
                                         
-                                            <div class="text-left">
-                                                <h6 class="title font-weight-bold  spacing mt-4 mx-4">
-                                                    <i class="fas fa-square orange-text mr-2" aria-hidden="true"></i>
-                                                    <strong>Lorem ipsum dolor sit amet</strong>
-                                                </h6>
-                                                <p class=" font-small mx-4">Nihil anim keffiyeh helvetica,
-                                                    craft beer labore wes anderson
-                                                </p>
-                                            </div>
-                                        
-                                            <div class="text-left">
-                                                <h6 class="title font-weight-bold  spacing mt-4 mx-4">
-                                                    <i class="fas fa-square orange-text mr-2" aria-hidden="true"></i>
-                                                    <strong>Lorem ipsum dolor sit amet</strong>
-                                                </h6>
-                                                <p class=" font-small mx-4">Nihil anim keffiyeh helvetica,
-                                                    craft beer labore wes anderson cred
-                                                </p>
-                                            </div>
-                                        
-                                        </div> -->
+                                        </div> 
                                         <!-- Grid column -->
 
                                     </div>
