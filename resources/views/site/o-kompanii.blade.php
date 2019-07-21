@@ -144,72 +144,267 @@
                                 </section>
                                 
                                 <!-- Section: About 2 -->
-                                <!-- <section id="gallery" class="mt-5 mb-5 pb-3 wow fadeIn" data-wow-delay="0.2s">
+                                <section id="gallery" class="mt-5 mb-5 pb-3 wow fadeIn" data-wow-delay="0.2s">
                                 
                                         <div class="row pt-4 mt-5">
                                   <div class="col-md-12 wow fadeIn">
-                                      
-                                       Secion heading
-                                            <h3 class="mb-5  title font-weight-bold wow fadeIn"
-                                                data-wow-delay="0.2s">
-                                                <strong>Галлерея продукции</strong>
-                                            </h3>
+
+                                    <h3 class="mb-5  title font-weight-bold wow fadeIn"
+                                        data-wow-delay="0.2s">
+                                        <strong>Галлерея продукции</strong>
+                                    </h3>
                                             
                                     <div id="mdb-lightbox-ui"></div>
-                                    <div class="mdb-lightbox no-margin">
-                                      <figure class="col-md-4">
-                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg" data-size="1600x1067">
-                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(117).jpg" class="img-fluid">
-                                        </a>
-                                      </figure>
-                                      <figure class="col-md-4">
-                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(98).jpg" data-size="1600x1067">
-                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(98).jpg" class="img-fluid" />
-                                        </a>
-                                      </figure>
-                                      <figure class="col-md-4">
-                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(131).jpg" data-size="1600x1067">
-                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(131).jpg" class="img-fluid" />
-                                        </a>
-                                      </figure>
-                                      <figure class="col-md-4">
-                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(123).jpg" data-size="1600x1067">
-                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(123).jpg" class="img-fluid" />
-                                        </a>
-                                      </figure>
-                                      <figure class="col-md-4">
-                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(118).jpg" data-size="1600x1067">
-                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(118).jpg" class="img-fluid" />
-                                        </a>
-                                      </figure>
-                                      <figure class="col-md-4">
-                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(128).jpg" data-size="1600x1067">
-                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(128).jpg" class="img-fluid" />
-                                        </a>
-                                      </figure>
-                                      <figure class="col-md-4">
-                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(132).jpg" data-size="1600x1067">
-                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(132).jpg" class="img-fluid" />
-                                        </a>
-                                      </figure>
-                                      <figure class="col-md-4">
-                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(115).jpg" data-size="1600x1067">
-                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(115).jpg" class="img-fluid" />
-                                        </a>
-                                      </figure>
-                                      <figure class="col-md-4">
-                                        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(133).jpg" data-size="1600x1067">
-                                          <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(133).jpg" class="img-fluid" />
-                                        </a>
-                                      </figure>
-                                    </div>
+                                    
+                                    <div class="mdb-lightbox">
+
+                                        <figure class="col-md-4">
+                                          <a href="/img/gallery/YQ2O5322.jpg" data-size="1000x667">
+                                            <img alt="picture" src="/img/gallery/YQ2O5322.jpg" class="img-fluid">
+                                          </a>
+                                        </figure>
+                                  
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5326.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5326.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5331.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5331.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5333.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5333.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5335.jpg" data-size="1000x753">
+                                              <img alt="picture" src="/img/gallery/YQ2O5335.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5337.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5337.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5340.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5340.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5353.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5353.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5354.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5354.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5355.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5355.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5359.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5359.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5360.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5360.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5362.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5362.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5364.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5364.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5386.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5386.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5389.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5389.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5391.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5391.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5392.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5392.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5394.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5394.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5395.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5395.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5396.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5396.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5397.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5397.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5399.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5399.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5400.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5400.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5401.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5401.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5402.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5402.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5403.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5403.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5405.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5405.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5406.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5406.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5407.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5407.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5408.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5408.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5411.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5411.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5413.jpg" data-size="1000x646">
+                                              <img alt="picture" src="/img/gallery/YQ2O5413.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5415.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5415.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5416.jpg" data-size="1000x667">
+                                              <img alt="picture" src="/img/gallery/YQ2O5416.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                        <figure class="col-md-4">
+                                            <a href="/img/gallery/YQ2O5418.jpg" data-size="1009x1000">
+                                              <img alt="picture" src="/img/gallery/YQ2O5418.jpg" class="img-fluid">
+                                            </a>
+                                        </figure>
+
+                                  
+                                        
+                                  
+                                      </div>
+                                  
+
                                   </div>
                                 </div>
                                 
                                     </div>
-                                    Grid row
+                                    {{-- Grid row --}}
                                 
-                                </section> -->
+                                </section> 
                                 <!-- Section: About 2 -->
 
                                 <hr>
